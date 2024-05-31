@@ -1,0 +1,37 @@
+
+.FancyBtn {
+    width: auto;
+    height: 40px;
+    text-align: center;
+    font-size: medium;
+    color: rgb(233, 224, 224);
+    margin-top: 0px;
+    border:1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #f00 0%, rgb(255, 174, 0) 100%);
+}
+ 
+.FancyBtn:hover {
+    border-color: gray;
+    animation: exampleAnimation 1s cubic-bezier(0.4, 0, 0.6, 1) normal; /* Apply the animation */
+}
+
+@keyframes exampleAnimation {
+    0% {
+      background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0) );
+    }
+    25% {
+      background-image: linear-gradient(to right, rgb(255, 50, 0) , rgb(255, 200, 3) );
+    }
+    50% {
+      background-image: linear-gradient(to right, rgb(255, 100, 3) , rgb(255, 150, 0) );
+    }
+    75% {
+      background-image: linear-gradient(to right, rgb(255, 150, 0) , rgb(255, 100, 0) );
+    }
+    100% {
+      background-image: linear-gradient(to right, rgb(255, 255, 0) , rgb(255,0,0) );
+    }
+}
